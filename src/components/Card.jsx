@@ -1,4 +1,7 @@
+import React from "react";
+
 const Card = ({ data }) => {
+    console.log("Render Card:", data.id); // Debug: log ogni render della card
 
     const {
         name,
@@ -16,4 +19,4 @@ const Card = ({ data }) => {
     )
 }
 
-export default Card
+export default React.memo(Card);
